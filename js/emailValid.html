@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+    function ValidateEmail(){
+         var x=document.forms["myForm"]["fname3"].value;
+        var mailformat = /^\w+([\.-]?\w+)@(\w+([\.-]?\w+))(\.\w{2,3})+$/;
+        if (x.match(mailformat)) {
+            return true;
+        }
+        else{
+            alert("gawar sala ek emailid bhi sahi nhi daal skta");
+            document.forms["myForm"]["fname3"].value="";
+            document.forms["myForm"]["fname3"].focus();
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+    <form name="myForm" action="" onsubmit="return ValidateEmail()" method="post" onreset="resetting()">
+        email:<input type="text" name="fname3">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

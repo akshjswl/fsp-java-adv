@@ -1,7 +1,7 @@
 ## [front end ]
 1. Introduction to J2EE.
 2. HTML
-3. JAVASCRIPT(client side vakidation)
+3. JAVASCRIPT(client side validation)
 
 [Backend]
 1. JDBC(java database connectivity)
